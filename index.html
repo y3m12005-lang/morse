@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="theme-color" content="#6d50d8"><meta name="description" content="Learn Morse code one sound at a time. Guided lessons, listening practice, a sending key, and a personal learning path from your first beep to whole messages.">
+ <title>MORSE — A little signal. A whole new world.</title>
+ <link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <a class="skip-link" href="#main">Skip to learning</a>
+ <aside id="sidebar">
+  <a class="brand" href="#welcome" aria-label="MORSE home"><span class="morse-wordmark"><b>MORSE<span class="logo-dot">.</span></b><small aria-hidden="true">−− &nbsp; −−− &nbsp; ·−· &nbsp; ··· &nbsp; ·</small></span></a>
+  <div class="nav-label">YOUR LEARNING SPACE</div>
+  <nav aria-label="Main navigation">
+   <a href="#learn" data-nav="learn"><span data-icon="book"></span>Learning path<span class="nav-pill">20</span></a>
+   <a href="#practice" data-nav="practice"><span data-icon="headphones"></span>Practice studio</a>
+   <a href="#send" data-nav="send"><span data-icon="radio"></span>Learn to send</a>
+   <a href="#reference" data-nav="reference"><span data-icon="grid"></span>Morse library</a>
+   <a href="#progress" data-nav="progress"><span data-icon="chart"></span>My progress</a>
+  </nav>
+  <div class="sidebar-tip"><span class="tiny-wave">▂ ▅ ▇ ▃ ▆ ▂</span><strong>Little sessions.<br>Lasting skills.</strong><p>Five focused minutes is a great place to start.</p><button class="text-button" data-action="review">Quick practice <span>↗</span></button></div>
+  <div class="sidebar-bottom"><button data-action="settings"><span data-icon="settings"></span>Sound & settings</button><span class="saved-note"><i></i> Progress saved on this device</span></div>
+ </aside>
+ <div class="workspace">
+  <header class="topbar"><span id="breadcrumb">Your learning / Overview</span><div class="topbar-actions"><span class="streak-pill" id="streak"><span data-icon="flame"></span>0 day streak</span><button class="sound-button" data-action="settings" aria-label="Sound settings"><span data-icon="volume"></span></button><button class="account-button" data-action="account">Sign in</button><span class="avatar" aria-label="MORSE learner">M</span></div></header>
+  <main id="main" tabindex="-1"></main>
+  <footer><span>Made for curious ears.</span><a href="#reference">International Morse · ITU M.1677</a><a href="#privacy">Privacy & your data</a></footer>
+ </div>
+ <dialog id="settings-dialog" aria-labelledby="settings-title"></dialog>
+ <div id="toast" role="status" aria-live="polite"></div>
+ <noscript>This learning studio needs JavaScript for Morse audio and practice. Please enable JavaScript in your browser.</noscript>
+ <script type="module" src="./app.js"></script>
+</body>
+</html>
