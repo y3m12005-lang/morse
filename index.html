@@ -9,11 +9,12 @@
 <body>
  <a class="skip-link" href="#main">Skip to learning</a>
  <aside id="sidebar">
-  <a class="brand" href="#welcome" aria-label="MORSE home"><span class="morse-wordmark"><b>MORSE<span class="logo-dot">.</span></b><small aria-hidden="true">−− &nbsp; −−− &nbsp; ·−· &nbsp; ··· &nbsp; ·</small></span></a>
+  <a class="brand" href="#welcome" aria-label="MORSE home"><img class="brand-logo" src="./morse-logo.jpg" alt="MORSE — in English and Morse code"></a>
   <div class="nav-label">YOUR LEARNING SPACE</div>
   <nav aria-label="Main navigation">
-   <a href="#learn" data-nav="learn"><span data-icon="book"></span>Learning path<span class="nav-pill">20</span></a>
+   <a href="#learn" data-nav="learn"><span data-icon="book"></span>Learning path<span class="nav-pill">26</span></a>
    <a href="#practice" data-nav="practice"><span data-icon="headphones"></span>Practice studio</a>
+   <button class="nav-translator" data-action="translator"><span data-icon="repeat"></span>Translator</button>
    <a href="#send" data-nav="send"><span data-icon="radio"></span>Learn to send</a>
    <a href="#reference" data-nav="reference"><span data-icon="grid"></span>Morse library</a>
    <a href="#progress" data-nav="progress"><span data-icon="chart"></span>My progress</a>
@@ -26,6 +27,7 @@
   <main id="main" tabindex="-1"></main>
   <footer><span>Made for curious ears.</span><a href="#reference">International Morse · ITU M.1677</a><a href="#privacy">Privacy & your data</a></footer>
  </div>
+ <dialog id="translator-dialog" aria-labelledby="translator-title"></dialog>
  <dialog id="settings-dialog" aria-labelledby="settings-title"></dialog>
  <div id="toast" role="status" aria-live="polite"></div>
  <noscript>This learning studio needs JavaScript for Morse audio and practice. Please enable JavaScript in your browser.</noscript>
