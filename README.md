@@ -4,7 +4,7 @@ A welcoming, sound-first Morse learning website. Built with browser-native JavaS
 
 ## What it teaches
 
-- 20 sequenced lessons: E/T through A–Z, digits, useful punctuation, words and messages.
+- 26 sequenced lessons: E/T through A–Z, digits, useful punctuation, words and messages.
 - Animated dots and dashes alongside accurate sine-wave Morse playback.
 - Guided hints that fade, audio-only lessons, typed answers and corrective feedback.
 - 80% pass marks, saved progress, daily goals, real practice statistics and first-listen recognition metrics.
@@ -29,3 +29,7 @@ This repository root is the complete static site. Serve it over HTTP(S); JavaScr
 
 No secrets are required. Google sign-in remains pending.
 
+
+## Advertising setup
+
+Three manual placements are prepared: desktop side rail, between lessons/on the session summary, and footer. They never appear inside listening questions. Live AdSense is disabled in ads.js until a real approved publisher ID and ad-unit IDs are provided and a certified consent flow is configured. No timed refresh or autoplay audio is implemented. Ads are requested at most once per placement per full page load. A custom domain or a working GitHub user-site root is needed for domain-level verification and ads.txt; the project lives under /morse/. Update the privacy page before activation.
