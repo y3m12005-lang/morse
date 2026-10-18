@@ -32,4 +32,16 @@ No secrets are required. Google sign-in remains pending.
 
 ## Advertising setup
 
-Three manual placements are prepared: desktop side rail, between lessons/on the session summary, and footer. They never appear inside listening questions. Live AdSense is disabled in ads.js until a real approved publisher ID and ad-unit IDs are provided and a certified consent flow is configured. No timed refresh or autoplay audio is implemented. Ads are requested at most once per placement per full page load. A custom domain or a working GitHub user-site root is needed for domain-level verification and ads.txt; the project lives under /morse/. Update the privacy page before activation.
+Ad placements live in `ads.js`:
+
+- **During lessons and listening sessions:** a sticky 300px rail beside the lesson on desktop (1340px and wider), and one banner below the lesson on tablets and phones. Both sit outside the question card and away from the answer buttons. They live outside `#main`, so they load once and stay put between questions (no refresh).
+- **Learning path:** right rail and under the lesson list.
+- **Public pages:** footer banner.
+
+Ads stay off until `adConfig` in `ads.js` has a real AdSense publisher ID, slot IDs, `consentReady: true` and `enabled: true`. Visitors never see empty boxes. To preview the positions, open the site with `?ads=preview`, for example `https://y3m12005-lang.github.io/morse/?ads=preview#learn`.
+
+A custom domain or a GitHub user-site root is needed for domain-level verification and ads.txt; the project lives under /morse/. Update the privacy page before activation.
+
+## Motion & polish
+
+`fx.css` and `fx.js` add page transitions, scroll reveals, count-up stats, confetti on correct answers and passed lessons, a live "transmitting" hello card, a sticky glass top bar, and a reading-progress bar. All motion switches off for visitors who choose reduced motion in their system settings.
